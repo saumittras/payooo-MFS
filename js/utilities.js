@@ -10,3 +10,10 @@ function getInputFieldValueById(id) {
 function getTextFieldValueById(id) {
   return parseFloat(document.getElementById(id).innerText);
 }
+
+function showSectionById(id) {
+  document.getElementById("add-money-form").classList.add("hidden");
+  document.getElementById("cash-out-form").classList.add("hidden");
+  document.getElementById("transaction-section").classList.add("hidden");
+  document.getElementById(id).classList.remove("hidden");
+}
